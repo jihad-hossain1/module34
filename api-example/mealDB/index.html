@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Yum Food</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- search container  -->
+        <section class="d-flex justify-content-center align-items-center" style="height: 120px;">
+            <div>
+                <input class="px-2" type="text" name="" id="search-field" placeholder="search">
+                <button class="btn btn-primary" onclick="searchMeals()">search</button>
+            </div>
+        </section>
+        <!-- meal container -->
+        <section class="container">
+            <div id="meal-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+            </div>
+        </section>
+
+
+        <!-- Model -->
+        <section>
+            <div class="modal fade" id="mealDetails" tabindex="-1" aria-labelledby="mealDetailsLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="mealDetailsLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="mealDetailsBody" class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- script  -->
+    <script src="mealdb.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
